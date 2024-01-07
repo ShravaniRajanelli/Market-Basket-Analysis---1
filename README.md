@@ -24,3 +24,52 @@ For example, if customers are buying milk, how probably are they to also buy bre
   |Healthcare|	Understand which medications are often prescribed together and identify patterns in patient behavior or treatment outcomes|
   |Banking/Finance|	Identify which products or services are frequently used together by customers and create targeted marketing campaigns or bundle deals|
   |Telecommunications	|Understand which products or services are often purchased together and create bundled service packages that increase revenue and improve the customer experience|
+
+## Association Rule for Market Basket Analysis
+
+Market basket analysis mainly works with the ASSOCIATION RULE {IF} -> {THEN}.
+
+**IF** means **Antecedent**: An antecedent is an item found within the data
+**THEN** means **Consequent**: A consequent is an item found in combination with the antecedent. 
+
+With the help of these, we are able to predict customer behavioral patterns. From this, we are able to make certain combinations with offers that customers will probably buy those products. That will automatically increase the sales and revenue of the company.
+
+With the help of the Apriori Algorithm, we can further classify and simplify the item sets which are frequently bought by the consumer.
+
+There are three components in APRIORI ALGORITHM:
+
+* SUPPORT
+* CONFIDENCE
+* LIFT
+
+Now take an example, suppose 5000 transactions have been made through a popular eCommerce website. Now they want to calculate the support, confidence, and lift for the two products, let’s say pen and notebook for example out of 5000 transactions, 500 transactions for pen, 700 transactions for notebook, and  1000 transactions for both.
+
+SUPPORT: It is been calculated with the number of transactions divided by the total number of transactions made,
+
+Support = freq(A,B)/N
+
+support(pen) = transactions related to pen/total transactions
+
+i.e support -> 500/5000=10 percent
+
+CONFIDENCE: It is been calculated for whether the product sales are popular on individual sales or through combined sales. That is calculated with combined transactions/individual transactions.
+
+Confidence = freq(A,B)/freq(A)
+
+Confidence =   combine transactions/individual transactions
+
+i.e confidence-> 1000/500=20 percent
+
+LIFT: Lift is calculated for knowing the ratio for the sales.
+
+Lift= confidence percent/ support percent
+
+Lift-> 20/10=2 
+
+When the Lift value is below 1 means the combination is not so frequently bought by consumers. But in this case, it shows that the probability of buying both the things together is high when compared to the transaction for the individual items sold. 
+
+With this, we come to an overall view of the Market Basket Analysis in Data Mining and how to calculate the sales for combination products. 
+
+This repository provides a set of tools and resources for performing Market Basket Analysis. Whether you are a data scientist, analyst, or business owner, this toolkit aims to simplify the process of extracting insights from your transactional data.
+
+
